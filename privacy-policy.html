@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/Logo64x64.png" alt="logo" />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html" class="active">Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html">Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: February 24, 2025</p>
+
+      <h2>Introduction</h2>
+      <p>
+        Our Calculator website values your privacy. This policy explains how we
+        handle data while you use our services.
+      </p>
+
+      <h2>Information We Collect</h2>
+      <p>
+        Our website does not collect personal data. However, we may gather
+        non-personal information such as:
+      </p>
+      <ul>
+        <li>Browser type and version</li>
+        <li>Basic usage statistics to improve performance</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <p>Any collected data is used to:</p>
+      <ul>
+        <li>Improve site functionality</li>
+        <li>Enhance user experience</li>
+      </ul>
+
+      <h2>Data Security</h2>
+      <p>
+        We do not store personal information. Security measures are in place to
+        protect general site usage data.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy occasionally. Any changes will be
+        posted on this page.
+      </p>
+
+      <h2>Contact Us</h2>
+      <p>If you have any privacy concerns, please reach out:</p>
+      <p>
+        Email:
+        <a href="mailto:support@calculator.com">support@calculator.com</a>
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Calculator. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      const mobileNav = document.querySelector(".hamburger");
+      const navbar = document.querySelector(".menubar");
+
+      const toggleNav = () => {
+        navbar.classList.toggle("active");
+        mobileNav.classList.toggle("hamburger-active");
+      };
+      mobileNav.addEventListener("click", () => toggleNav());
+    </script>
+  </body>
+</html>

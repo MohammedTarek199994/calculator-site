@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/Logo64x64.png" alt="logo" />
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="privacy-policy.html">Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html">Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1>Welcome to Simple Calculator</h1>
+      <p>
+        A user-friendly calculator designed for quick and easy calculations.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>
+          <strong>➕ Addition:</strong> Perform basic addition operations.
+        </li>
+        <li><strong>➖ Subtraction:</strong> Quickly subtract numbers.</li>
+        <li>
+          <strong>✖️ Multiplication:</strong> Multiply numbers efficiently.
+        </li>
+        <li><strong>➗ Division:</strong> Get accurate division results.</li>
+        <li><strong>🧮 Memory Functions:</strong> Store and recall values.</li>
+        <li>
+          <strong>📱 Mobile-Friendly:</strong> Works seamlessly on any device.
+        </li>
+      </ul>
+
+      <h2>Get Started</h2>
+      <p>
+        Start using the calculator by entering numbers and selecting an
+        operation.
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Simple Calculator. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      const mobileNav = document.querySelector(".hamburger");
+      const navbar = document.querySelector(".menubar");
+
+      const toggleNav = () => {
+        navbar.classList.toggle("active");
+        mobileNav.classList.toggle("hamburger-active");
+      };
+      mobileNav.addEventListener("click", () => toggleNav());
+    </script>
+  </body>
+</html>

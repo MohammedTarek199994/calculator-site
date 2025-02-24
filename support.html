@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Support</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/Logo64x64.png" alt="Calculator Logo" />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html">Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html">Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1>Calculator Support</h1>
+
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>
+          If you need help with our calculator, feel free to reach out to us.
+        </p>
+        <h3>Support Email:</h3>
+        <p>
+          <a href="mailto:mohammed.naga@gomlamarket.com"
+            >mohammed.naga@gomlamarket.com</a
+          >
+        </p>
+        <h3>Phone:</h3>
+        <p>+2 01275599845</p>
+      </div>
+
+      <h2>Frequently Asked Questions (FAQs)</h2>
+      <ul class="faq">
+        <li>
+          <h3>How do I use the calculator?</h3>
+          <p>
+            Simply enter numbers and use the buttons to perform calculations.
+          </p>
+        </li>
+        <li>
+          <h3>Can the calculator perform scientific calculations?</h3>
+          <p>Yes, our calculator supports basic and scientific calculations.</p>
+        </li>
+        <li>
+          <h3>Why is my calculation incorrect?</h3>
+          <p>Ensure you're using the correct syntax and operations.</p>
+        </li>
+        <li>
+          <h3>Does the calculator support history tracking?</h3>
+          <p>Yes, it keeps track of your previous calculations.</p>
+        </li>
+      </ul>
+
+      <h2>Feedback</h2>
+      <p>
+        We appreciate your feedback. Send us your suggestions at
+        <a href="mailto:mohammed.naga@gomlamarket.com"
+          >mohammed.naga@gomlamarket.com</a
+        >.
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Calculator Inc. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNav = document.querySelector(".hamburger");
+        const navbar = document.querySelector(".menubar");
+
+        if (mobileNav && navbar) {
+          mobileNav.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+            mobileNav.classList.toggle("hamburger-active");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
